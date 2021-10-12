@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex to RGB Color Converter</title>
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <div class="header-top">
+        <h5><a href="#">RapidTables</a></h5>
+    </div>
+    <!-- header start -->
+    <header class="container">
+        <div class="header-menu">
+            <ul>
+                <li><a href="#">home ></a></li>
+                <li><a href="#">conversion ></a></li>
+                <li><a href="#">color conversion ></a></li>
+                <li><a href="#">hex to RGB</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- home start -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="home-left">
+                <h3>Hex to RGB Color Converter</h3>
+                <p>Enter 6 digits hex color code and press the Convert button:</p>
+                <div class="home-content">
+                    <h5>Hex color code (#RRGGBB)</h5>
+                    <input class="input" type="text" placeholder="000000">
+
+                    <div class="click">
+                        <button class="btn convert">
+                            <img src="images/01.png" alt="convert"> convert
+                        </button>
+                        <button class="btn reset">
+                            <img src="images/02.png" alt="reset"> reset
+                        </button>
+                        <button class="btn swap">
+                            <img src="images/03.png" alt="swap"> swap
+                        </button>
+                    </div>
+                    
+                    <label for="red">Red color (R)</label>
+                    <!-- <div id ="red"></div> -->
+                    <input id="red" type="text">
+                    <label for="green">Green color (G)</label>
+                    <!-- <div id ="green"></div> -->
+                    <input id="green" type="text">
+                    <label for="blue">Blue color (B)</label>
+                    <!-- <div id ="blue"></div> -->
+                    <input id="blue" type="text">
+                    <label for="css">CSS color</label>
+                    <!-- <div id ="css"></div> -->
+                    <input id="css" type="text">
+                    <label for="color-preview">Color preview</label>
+                    <input id="color-preview" type="text">
+                </div>
+
+                <div class="color-table">
+                    <a class="rgb" href="#">RGB to hex converter ►</a>
+                    <h5>Hex to RGB color table</h5>
+                    <table class="dtable">
+                        <tr>
+                            <th>Color</th>
+                            <th>Color<P>name</P></th>
+                            <th>Hex</th>
+                            <th>(R,G,B)</th>
+                        </tr>
+                        <tr>
+                            <td class="black"></td>
+                            <td>Black</td>
+                            <td>#000000</td>
+                            <td>(0,0,0)</td>
+                        </tr>
+                        <tr>
+                            <td class="white"></td>
+                            <td>White</td>
+                            <td>#FFFFFF</td>
+                            <td>(255,255,255)</td>
+                        </tr>
+                        <tr>
+                            <td class="red"></td>
+                            <td>Red</td>
+                            <td>#FF0000</td>
+                            <td>(255,0,0)</td>
+                        </tr>
+                        <tr>
+                            <td class="lime"></td>
+                            <td>Lime</td>
+                            <td>#00FF00</td>
+                            <td>(0,255,0)</td>
+                        </tr>
+                        <tr>
+                            <td class="blue"></td>
+                            <td>Blue</td>
+                            <td>#0000FF</td>
+                            <td>(0,0,255)</td>
+                        </tr>
+                        <tr>
+                            <td class="yellow"></td>
+                            <td>Yellow</td>
+                            <td>#FFFF00</td>
+                            <td>(255,255,0)</td>
+                        </tr>
+                        <tr>
+                            <td class="cyan"></td>
+                            <td>Cyan</td>
+                            <td>#00FFFF</td>
+                            <td>(0,255,255)</td>
+                        </tr>
+                        <tr>
+                            <td class="magenta"></td>
+                            <td>Magenta</td>
+                            <td>#FF00FF</td>
+                            <td>(255,0,255)</td>
+                        </tr>
+                        <tr>
+                            <td class="silver"></td>
+                            <td>Silver</td>
+                            <td>#C0C0C0</td>
+                            <td>(192,192,192)</td>
+                        </tr>
+                        <tr>
+                            <td class="gray"></td>
+                            <td>Gray</td>
+                            <td>#808080</td>
+                            <td>(128,128,128)</td>
+                        </tr>
+                        <tr>
+                            <td class="maroon"></td>
+                            <td>Maroon</td>
+                            <td>#800000</td>
+                            <td>(128,0,0)</td>
+                        </tr>
+                        <tr>
+                            <td class="olive"></td>
+                            <td>Olive</td>
+                            <td>#808000</td>
+                            <td>(128,128,0)</td>
+                        </tr>
+                        <tr>
+                            <td class="green"></td>
+                            <td>Green</td>
+                            <td>#008000</td>
+                            <td>(0,128,0)</td>
+                        </tr>
+                        <tr>
+                            <td class="purple"></td>
+                            <td>Purple</td>
+                            <td>#800080</td>
+                            <td>(128,0,128)</td>
+                        </tr>
+                        <tr>
+                            <td class="teal"></td>
+                            <td>Teal</td>
+                            <td>#008080</td>
+                            <td>(0,128,128)</td>
+                        </tr>
+                        <tr>
+                            <td class="navy"></td>
+                            <td>Navy</td>
+                            <td>#000080</td>
+                            <td>(0,0,128)</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+
+            <div class="home-right">
+                <h6>COLOR CONVERSION</h6>
+                <ul>
+                    <li><a href="#">CMYK to RGB</a></li>
+                    <li><a href="#">Hex to RGB</a></li>
+                    <li><a href="#">HSL to RGB</a></li>
+                    <li><a href="#">HSV to RGB</a></li>
+                    <li><a href="#">RGB to CMYK</a></li>
+                    <li><a href="#">RGB to Hex</a></li>
+                    <li><a href="#">RGB to HSL</a></li>
+                    <li><a href="#">RGB to HSV</a></li>
+                </ul>
+
+                <h6>RAPID TABLES</h6>
+                <ul>
+                    <li><a href="#">Recommend Site</a></li>
+                    <li><a href="#">Send Feedback</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- home end -->
+
+    <!-- RGB conversion start -->
+    <section class="rgb-conversion" id="rgb-conversion">
+        <div class="container">
+            <h5>Hex to RGB conversion</h5>
+            <p class="para-1">
+                1.Get the 2 left digits of the hex color code and convert to decimal value to get the red color level.<br/>
+                2.Get the 2 middle digits of the hex color code and convert to decimal value to get the green color level.<br/>
+                3.Get the 2 right digits of the hex color code and convert to decimal value to get the blue color level.
+            </p>
+            <h6>Example #1</h6>
+            <p class="para-2">Convert red hex color code FF0000 to RGB color:</p>
+            <p class="para-3"><span>Hex</span> = FF0000</p>
+            <p class="para-4">So the RGB colors are:</p>
+            <p class="para-5">
+                <span>R</span> = FF<sub>16</sub> = 255<sub>10</sub><br/>
+                <span>G</span> = 00<sub>16</sub> = 0<sub>10</sub><br/>
+                <span>B</span> = 00<sub>16</sub> = 0<sub>10</sub><br/>
+                Or<br/>
+                <span>RGB</span> = (255, 0, 0)
+            </p>
+
+            <h6>Example #2</h6>
+            <p class="para-2">Convert gold hex color code FFD700 to RGB color:</p>
+            <p class="para-3"><span>Hex</span> = FFD700</p>
+            <p class="para-4">So the RGB colors are:</p>
+            <p class="para-5">
+                <span>R</span> = FF<sub>16</sub> = 255<sub>10</sub><br/>
+                <span>G</span> = D7<sub>16</sub> = 215<sub>10</sub><br/>
+                <span>B</span> = 00<sub>16</sub> = 0<sub>10</sub><br/>
+                Or<br/>
+                <span>RGB</span> = (255, 215, 0)
+            </p>
+            <a class="rgb" href="#">RGB to hex converter ►</a>
+
+            <div class="see">
+                <h4>See also</h4>
+                <ul>
+                    <li><a href="#">How to convert hex to RGB</a></li>
+                    <li><a href="#">RGB to hex converter</a></li>
+                    <li><a href="#">Hex to decimal converter</a></li>
+                    <li><a href="#">RGB color codes</a></li>
+                </ul>
+            </div>
+
+            <label>Write how to improve this page</label>
+            <textarea name="text" cols="60" rows="40"></textarea>
+            <button class="btn">submit Feedback</button>
+        </div>
+    </section>
+    <!-- RGB conversion end -->
+
+    <!-- bottom start -->
+    <footer>
+        <div class="container fotter">
+            <ul>
+                <li><a class="active" href="#">home</a></li>
+                <li><a href="#">web</a></li>
+                <li><a href="#">math</a></li>
+                <li><a href="#">electricity</a></li>
+                <li><a href="#">calcularots</a></li>
+                <li><a href="#">converters</a></li>
+                <li><a href="#">tools</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- bottom end -->
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
